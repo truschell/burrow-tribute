@@ -8,12 +8,10 @@
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.5;
-    text-align: center;
-    color: #000000;
-    margin: 0;
-    padding: 0 20px; /* Added padding to prevent content from touching screen edges */
-    background: #f4f4f4; /* Light background for better contrast */
+    line-height: 1.6;
+    color: #333;
+    padding: 20px; /* Added padding for better spacing */
+    background: #f9f9f9; /* Slightly lighter background for a softer feel */
 }
 
 /* Main Content */
@@ -21,20 +19,22 @@ body {
     max-width: 900px; /* Keeps content centered and readable */
     margin: 40px auto;
     padding: 20px;
-    border-radius: 10px;
-    background: #000000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Softer shadow */
+    border: 1px solid #ddd; /* Light border for a cleaner look */
 }
 
 /* Header */
 .header {
-    color: white;
-    font-size: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
 #title {
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 /* Image Section */
@@ -55,7 +55,7 @@ img {
 }
 
 #img-caption {
-    margin: 15px 0 5px 0;
+    margin: 15px auto 5px;
     font-size: 0.9rem;
 }
 
@@ -64,10 +64,12 @@ img {
     max-width: 80%;
     margin: 20px auto;
     border-radius: 8px;
-    background: white;
-    padding: 5% 10%;
+    background: #ffffff;
+    padding: 20px;
     line-height: 1.8;
     font-size: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
 }
 
 /* Link Styling */
