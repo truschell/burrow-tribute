@@ -18,27 +18,34 @@ body {
 /* Header */
 .header {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding: 20px 0;
 }
 
 /* Title */
 #title {
-    margin: 0;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Image Section */
 #img-div {
     background: #FB4F14;
-    padding: 15px;
+    padding: 30px;
     margin: 20px auto;
     border-radius: 8px;
     color: white;
-    max-width: 800px; /* Added to limit image size */
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Added drop shadow */
 }
 
 img {
     max-width: 100%;
-    max-height: 400px; /* Smaller image size */
+    max-height: 400px;
     display: block;
     height: auto;
     margin: 0 auto;
