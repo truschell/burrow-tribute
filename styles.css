@@ -18,62 +18,68 @@ body {
 
 /* Main Container */
 #main {
-    margin: 30px auto;
+    margin: 40px auto;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     background: #000000;
-    max-width: 900px;
+    max-width: 800px; /* Reduced max width */
     width: 90%;
 }
 
 /* Header */
 .header {
     color: white;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 #title {
     margin: 0;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #cccccc;
 }
 
 /* Image Section */
 #img-div {
     background: #FB4F14;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 12px;
+    border-radius: 12px;
     color: white;
-    margin-bottom: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px; /* Reduced max width of image container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 img {
-    max-width: 100%;
     width: 100%;
     height: auto;
     border-radius: 8px;
     display: block;
     margin: 0 auto;
-    max-height: 500px; /* Added to prevent excessively tall images */
+    max-height: 400px; /* Reduced max height for a more balanced look */
     object-fit: cover; /* Ensures the image looks good within the size limits */
 }
 
 #img-caption {
     margin: 10px 0 5px 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
 
 /* Tribute Info */
 #tribute-info {
     max-width: 80%;
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: 12px;
     background: white;
-    padding: 5% 8%;
+    padding: 6% 8%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
     line-height: 1.6;
+    text-align: left;
 }
 
 /* Responsive Design */
@@ -87,26 +93,25 @@ img {
     }
 
     #img-div {
-        padding: 20px;
+        padding: 16px;
     }
 
     img {
-        max-width: 80%;
+        max-height: 350px; /* Smaller image height for desktops */
     }
 
     #tribute-info {
         max-width: 70%;
-        padding: 4% 6%;
     }
 }
 
 @media (min-width: 1200px) {
     #main {
-        max-width: 1000px;
+        max-width: 900px;
     }
 
     img {
-        max-width: 70%;
+        max-height: 300px; /* Further reduce image height for large screens */
     }
 
     #tribute-info {
