@@ -17,8 +17,9 @@ body {
 
 /* Header */
 .header {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 /* Title */
@@ -29,8 +30,6 @@ body {
 /* Image Section */
 #img-div {
     background: #FB4F14;
-    padding: 15px;
-    margin: 20px auto;
     border-radius: 8px;
     color: white;
     max-width: 800px; /* Added to limit image size */
