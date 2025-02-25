@@ -72,6 +72,10 @@ img {
     font-size: 1rem;
 }
 
+h3 {
+    margin: 20px 0px;
+}
+
 /* Link Styling */
 a {
     color: #FB4F14;
