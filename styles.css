@@ -1,50 +1,66 @@
-/* Base Styles */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.5;
+    line-height: 1.6;
     text-align: center;
-    color: #000000;
+    color: #000;
     margin: 0;
+    background: #f4f4f4;
 }
 
+/* Main Container */
 #main {
     margin: 30px 8px;
-    padding: 15px;
-    border-radius: 5px;
-    background: #000000;
-}
-
-.header {
+    padding: 20px;
+    border-radius: 8px;
+    background: #000;
     color: white;
-    font-size: 1.2rem;
 }
 
-#title {margin: 0 0;}
+/* Header */
+.header {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
 
+/* Title */
+#title {
+    margin: 0;
+}
+
+/* Image Section */
 #img-div {
     background: #FB4F14;
-    padding: 10px;
-    margin: 0;
-    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 8px;
     color: white;
+    max-width: 600px; /* Added to limit image size */
 }
 
 img {
     max-width: 100%;
+    max-height: 400px; /* Smaller image size */
     display: block;
     height: auto;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
+/* Image Caption */
 #img-caption {
-    margin: 15px 0 5px 0;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
 }
 
+/* Tribute Info Section */
 #tribute-info {
-    max-width: 80%;
-    margin: 10px auto;
-    border-radius: 5px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
     background: white;
-    padding: 5% 10%;
+    padding: 30px;
+    color: #000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
