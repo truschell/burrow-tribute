@@ -1,12 +1,14 @@
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     text-align: center;
     color: #000000;
     margin: 0;
+    background: #f0f0f0;
 }
 
+/* Main Container */
 #main {
     margin: 30px 8px;
     padding: 15px;
@@ -14,17 +16,23 @@ body {
     background: #000000;
 }
 
+/* Header */
 .header {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-#title {margin: 0 0;}
+#title {
+    margin: 0;
+    padding: 10px 0;
+}
 
+/* Image Section */
 #img-div {
     background: #FB4F14;
     padding: 10px;
-    margin: 0;
+    margin: 10px 0;
     border-radius: 5px;
     color: white;
 }
@@ -39,15 +47,35 @@ img {
 
 #img-caption {
     margin: 15px 0 5px 0;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
+/* Tribute Information */
 #tribute-info {
     max-width: 80%;
     margin: 10px auto;
     border-radius: 5px;
     background: white;
     padding: 5% 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #333;
 }
 
+/* Footer */
+footer {
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
 
+footer a {
+    color: #FB4F14;
+    text-decoration: none;
+    font-weight: 500;
+}
 
+footer a:hover {
+    text-decoration: underline;
+}
