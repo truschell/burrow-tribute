@@ -35,7 +35,7 @@ body {
     margin: 20px auto;
     border-radius: 8px;
     color: white;
-    max-width: 600px; /* Added to limit image size */
+    max-width: 800px; /* Added to limit image size */
 }
 
 img {
