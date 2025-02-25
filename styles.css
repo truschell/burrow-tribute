@@ -5,32 +5,32 @@
     box-sizing: border-box;
 }
 
-/* Body */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     text-align: center;
-    color: #000000;
-    margin: 0;
-    padding: 0 20px;
+    color: #333;
     background: #f4f4f4;
+    padding: 20px;
 }
 
-/* Main Content */
+/* Main Container */
 #main {
-    max-width: 900px;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    background: #000000;
-    color: white;
+    background: #000;
+    max-width: 1200px;
+    width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
 .header {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 
 #title {
@@ -40,75 +40,97 @@ body {
 /* Image Section */
 #img-div {
     background: #FB4F14;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 img {
     max-width: 100%;
-    display: block;
     height: auto;
+    display: block;
     margin: 0 auto;
     border-radius: 8px;
 }
 
 #img-caption {
-    margin: 15px 15px 5px;
-    font-size: 0.9rem;
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #fff;
 }
 
 /* Tribute Info */
 #tribute-info {
-    width: 100%;
-    max-width: 80%;
+    max-width: 90%;
     margin: 20px auto;
-    border-radius: 8px;
-    background: white;
-    color: #000000;
-    padding: 5% 10%;
+    border-radius: 10px;
+    background: #fff;
+    padding: 20px;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;
     line-height: 1.8;
-    font-size: 1rem;
 }
 
-h3 {
-    margin: 20px 0px;
-}
+/* Responsive Design */
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
 
-/* Link Styling */
-a {
-    color: #FB4F14;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #D93D0B;
-}
-
-/* Responsive Design - Mobile */
-@media (max-width: 768px) {
     #main {
-        max-width: 100%;
-        margin: 20px auto;
-        padding: 15px;
+        width: 70%;
     }
 
     .header {
-        font-size: 1.3rem;
-    }
-
-    img {
-        max-width: 100%;
-        border-radius: 6px;
+        font-size: 2.2rem;
     }
 
     #tribute-info {
-        max-width: 95%;
-        padding: 5%;
-        font-size: 0.9rem;
-        line-height: 1.7;
+        max-width: 80%;
     }
+}
+
+@media (min-width: 1024px) {
+    #main {
+        width: 60%;
+    }
+
+    #tribute-info {
+        max-width: 70%;
+    }
+
+    .header {
+        font-size: 2.5rem;
+    }
+} 
+
+/* Accessibility */
+img {
+    object-fit: cover;
+    object-position: center;
+} 
+
+:focus {
+    outline: 2px solid #FB4F14;
+    outline-offset: 3px;
+    border-radius: 5px;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
 }
